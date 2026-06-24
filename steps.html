@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Step-by-Step · Vincere Portfolios — Cash Account</title>
+<meta name="description" content="Every step to get your Vincere Portfolios cash account ready, written out plainly. Do one at a time." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- ============================================================= -->
+<!--  EDIT ONLY THIS BLOCK.                                          -->
+<!--  - "video" = the Loom link clients can watch for this step.     -->
+<!--  - "ctaUrl" = the button that opens the service.                -->
+<!--  - "list"  = the written steps, in order.                       -->
+<!--  - "note"  = an optional highlighted callout under the steps.   -->
+<!--  Lines marked  NEEDS YOUR LINK  must be replaced before launch.  -->
+<!-- ============================================================= -->
+<script>
+  const STEPS = [
+    {
+      title: "Join the Vincere Discord",
+      time: "About 3 minutes",
+      why: "Your Discord invite lives inside Whop, the same portal where you signed your license agreement. The welcome video there walks you to it. Discord is where Vincere posts announcements, daily updates, and payouts, and it is the fastest way to reach the team.",
+      list: [
+        "Open your Whop portal using the button below and play the short welcome video.",
+        "In Whop, click the Discord access link. The welcome video points you right to it.",
+        "Already use Discord? Sign in and accept the invite. New to Discord? Click “claim access” and create a free account when prompted. Any username is fine.",
+        "Once you are in, you will see the Vincere Trading community. The channels to watch are Announcements, Daily Updates, and Payouts.",
+        "While you are in Whop, note where your license key and algo files are, under “License Key & Algorithm Files.”"
+      ],
+      note: "You do not install the license key or files yourself. Your onboarder applies them for you during onboarding. You just need to know where they live in Whop. If you bought the VPS, these come preloaded.",
+      video: "https://www.loom.com/share/cab18399b2864051aa2d845f36386c16",
+      ctaLabel: "Open my Whop portal",
+      ctaUrl: "https://whop.com/joined/vincere-trading/"   // NEEDS YOUR LINK (your Whop portal)
+    },
+    {
+      title: "Create your NinjaTrader account",
+      time: "About 5 minutes",
+      why: "This is just a free login. You are NOT putting in money or applying for a cash account yet. Your onboarder will need this username and password during your VPS setup.",
+      list: [
+        "Go to ninjatrader.com and click “Open Account” at the top right.",
+        "Sign up with your regular email. Do not use the Google or Apple sign-in buttons.",
+        "Check your inbox for the confirmation email and click the link inside.",
+        "On the page that opens, choose a username (not your email address) and a password. Write them down and keep them safe. Your onboarder enters them on your VPS during onboarding.",
+        "Tick the agreement box and click “Create user.”",
+        "On the next screen, do NOT click “Download.” The platform is already installed on your VPS.",
+        "Choose “Not ready for live trading, try risk-free simulated data.” Pick this even if you plan to run a cash account. The live setup is handled with you on your onboarding call.",
+        "Fill in the short “Tell us about yourself” form: name, country, phone. No credit card is required.",
+        "You can close out of the rest. All the team needs from this step is your username and password."
+      ],
+      note: "Keep the form details accurate. If you later move to a live cash account, NinjaTrader checks this information against your ID.",
+      video: "https://www.loom.com/share/db19cc4b706d43a7b8ae0889c54c2212",
+      ctaLabel: "Open ninjatrader.com",
+      ctaUrl: "https://ninjatrader.com/"
+    },
+    {
+      title: "Apply for a live account",
+      time: "10 to 15 minutes",
+      why: "Now you will apply for the live account your algorithms will trade on. Approval is sometimes instant. Otherwise it usually takes 1 to 2 business days.",
+      list: [
+        "Log in to NinjaTrader. On your dashboard, click “Start application” (sometimes shown as “Create your application”).",
+        "Choose your account type. Most clients select Individual. Business entity and IRA accounts require extra documents.",
+        "Work through each section: personal details, financial details, experience and affiliations, and additional users.",
+        "Answer every question truthfully and accurately, including the trading-experience questions.",
+        "When asked if you are a professional trader, select Non-professional, unless you are a registered professional. If you are, you will know.",
+        "When asked whether anyone else manages or has an interest in the account, the answer is No. You control your own account.",
+        "Review the summary screen, correct anything that is wrong, then click Save and Continue.",
+        "Upload your identification (for example a driver's license and/or passport) and read and accept the disclosures.",
+        "Sign and submit the application."
+      ],
+      note: "How much to fund and how to spread it across algorithms is covered on your onboarding call. NinjaTrader's own guides are at support.ninjatrader.com.",
+      video: "https://www.loom.com/share/e06d8d5fce3b4eeeabe59b05d7329ec4",
+      ctaLabel: "Log in to NinjaTrader",
+      ctaUrl: "https://ninjatrader.com/"
+    },
+    {
+      title: "Subscribe to live market data",
+      time: "About 5 minutes",
+      why: "This turns on the real-time prices your algorithms read. You only need Level 1 (price) data. The CME Bundle covers everything for the instruments Vincere currently trades.",
+      list: [
+        "Log in to NinjaTrader and open the market-data section (dashboard → “Subscribe to market data,” or Settings → Market Data).",
+        "You only need Level 1 data. You do NOT need Level 2, the multi-broker add-on, TradingView, or order-flow add-ons. You trade directly through NinjaTrader.",
+        "Select the CME Bundle. It covers the exchanges the current instruments use: CME, CBOT, COMEX, and NYMEX (for example MNQ/NQ, YM, micro gold, crude oil, and natural gas).",
+        "Click “Proceed to checkout.” If you already have funds on file it charges your account, otherwise you pay by card. The bundle is inexpensive, around $12 per year in the walkthrough.",
+        "That is it. Your data shows as live once your account is connected on the desktop platform. Your onboarder confirms this with you when prices are moving in real time."
+      ],
+      note: "If Vincere adds instruments later that need different data, the team will let you know in Discord.",
+      video: "https://www.loom.com/share/f3f0bea049af496cb1cd214be96f3f25",
+      ctaLabel: "Log in to NinjaTrader",
+      ctaUrl: "https://ninjatrader.com/"
+    },
+    {
+      title: "Set up your QuantVPS",
+      time: "About 10 minutes",
+      why: "Your VPS is an always-on computer in the cloud that runs your algorithms 24/5, even when your own computer is off. It arrives with NinjaTrader preloaded.",
+      list: [
+        "Go to quantvps.com/vincere using the button below.",
+        "Choose the $59/month plan. It is the right fit for running the Vincere algorithms.",
+        "Complete your purchase. Your VPS arrives with NinjaTrader already installed and your algo files preloaded. There is nothing to install yourself.",
+        "Bring your NinjaTrader username and password (from Step 2) to your onboarding call. Your onboarder logs into the VPS with you and finishes the setup."
+      ],
+      note: "There is no walkthrough video for this step yet. If anything looks unclear, your onboarder will help you on the call.",
+      video: "",
+      ctaLabel: "Get my QuantVPS",
+      ctaUrl: "https://www.quantvps.com/vincere"
+    }
+  ];
+
+  const FINISH = {
+    title: "You're ready for Onboarding 1",
+    body: "That's everything on the setup list. Your team takes it from here on your first onboarding call."
+  };
+</script>
+<!-- ============================================================= -->
+<!--  Nothing below needs editing.                                  -->
+<!-- ============================================================= -->
+
+<style>
+  :root{
+    --paper:#F1EFF9; --pill:#E7E3F7; --card:#FFFFFF; --card-edge:#E6E2F4;
+    --ink:#16172A; --muted:#6B6C84; --line:#E0DCF1;
+    --indigo-900:#2E2675; --indigo-700:#4A3F9C; --indigo-500:#6A5FC6; --indigo-300:#A79EE4;
+    --ok:#1B8A5A; --ok-700:#15734A;
+    --display:"Sora","Plus Jakarta Sans",system-ui,sans-serif;
+    --ui:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --shadow:0 1px 2px rgba(46,38,117,.05), 0 14px 34px -18px rgba(46,38,117,.30);
+    --r:18px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; color:var(--ink);
+    background:linear-gradient(180deg,#F6F4FC 0%, var(--paper) 300px, var(--paper) 100%);
+    font-family:var(--ui); font-size:18px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px; margin:0 auto; padding:clamp(22px,5vw,48px) clamp(18px,5vw,32px) 80px;}
+
+  .wordmark{font-family:var(--display); font-weight:800; letter-spacing:.22em; font-size:1rem; color:var(--indigo-700); margin:0 0 16px;}
+  .eyebrow{display:inline-block; background:var(--pill); color:var(--indigo-700);
+    font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; font-weight:700; padding:8px 16px; border-radius:99px; margin:0 0 22px;}
+  h1{font-family:var(--display); font-weight:800; font-size:clamp(2.3rem,7vw,3.7rem); line-height:1.05; letter-spacing:-.02em; margin:0 0 18px; color:var(--ink);}
+  h1 .light{color:var(--indigo-700);}
+  .lede{font-size:clamp(1.05rem,2.4vw,1.22rem); color:var(--muted); margin:0; max-width:50ch;}
+  .switch{margin:14px 0 0; font-size:1rem;}
+  .switch a{color:var(--indigo-700); font-weight:600; text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--indigo-300);}
+  .switch a:hover{color:var(--indigo-900); text-decoration-color:var(--indigo-500);}
+
+  .meter{margin:30px 0 8px; padding:18px 20px; background:var(--card); border:1px solid var(--card-edge);
+    border-radius:var(--r); box-shadow:var(--shadow); display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+  .meter-count{font-family:var(--display); font-size:1.4rem; color:var(--ink); font-weight:700; white-space:nowrap;}
+  .meter-count b{color:var(--indigo-700);}
+  .meter-bar{flex:1 1 200px; height:12px; border-radius:99px; background:#E4E0F2; overflow:hidden;}
+  .meter-fill{height:100%; width:0; border-radius:99px; background:linear-gradient(90deg,var(--indigo-500),var(--indigo-700)); transition:width .6s cubic-bezier(.2,.8,.2,1);}
+  .meter-note{flex-basis:100%; font-size:.95rem; color:var(--muted); margin:0;}
+
+  .steps{margin:34px 0 0; padding:0; list-style:none; position:relative;}
+  .steps::before{content:""; position:absolute; left:23px; top:30px; bottom:60px; width:3px; background:var(--line); border-radius:2px;}
+  .steps::after{content:""; position:absolute; left:23px; top:30px; width:3px; height:var(--spine,0px);
+    background:linear-gradient(180deg,var(--indigo-300),var(--indigo-700)); border-radius:2px; transition:height .6s cubic-bezier(.2,.8,.2,1);}
+  @media (max-width:560px){ .steps::before,.steps::after{left:19px;} }
+
+  .step{position:relative; padding-left:64px; margin-bottom:22px;}
+  @media (max-width:560px){ .step{padding-left:52px;} }
+
+  .node{position:absolute; left:0; top:22px; width:48px; height:48px; border-radius:50%;
+    background:var(--card); border:3px solid var(--line); color:var(--indigo-700);
+    display:grid; place-items:center; font-family:var(--display); font-weight:700; font-size:1.25rem;
+    z-index:2; transition:background .35s ease, border-color .35s ease, color .35s ease, transform .35s ease;}
+  @media (max-width:560px){ .node{width:40px; height:40px; font-size:1.05rem;} }
+
+  .card{background:var(--card); border:1px solid var(--card-edge); border-radius:var(--r); box-shadow:var(--shadow); padding:22px 24px 24px; transition:border-color .3s ease;}
+  .card h2{font-family:var(--display); font-weight:700; font-size:1.35rem; line-height:1.2; margin:0 0 6px; color:var(--ink); letter-spacing:-.01em;}
+  .time{font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--indigo-700); font-weight:700; margin:0 0 12px;}
+  .why{margin:0 0 18px; color:#3b3c52;}
+
+  ol.todo{margin:0 0 4px; padding:0; counter-reset:s; list-style:none;}
+  ol.todo li{position:relative; padding:0 0 14px 40px; color:#2d2e44;}
+  ol.todo li::before{counter-increment:s; content:counter(s); position:absolute; left:0; top:1px;
+    width:26px; height:26px; border-radius:50%; background:#EBE8F8; color:var(--indigo-700);
+    font-family:var(--ui); font-weight:700; font-size:.85rem; display:grid; place-items:center;}
+  ol.todo li:last-child{padding-bottom:0;}
+
+  .note{margin:16px 0 0; padding:14px 16px; border-left:3px solid var(--indigo-500);
+    background:#F0EDFA; border-radius:0 10px 10px 0; font-size:.96rem; color:#42415f;}
+
+  .watch{display:inline-flex; align-items:center; gap:8px; margin:18px 0 0; color:var(--indigo-700); font-weight:600; text-decoration:none; font-size:1rem;}
+  .watch svg{width:20px; height:20px;}
+  .watch:hover{color:var(--indigo-900);}
+  .watch.none{color:var(--muted); pointer-events:none;}
+
+  .actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:20px;}
+  .btn{appearance:none; cursor:pointer; text-decoration:none; font-family:var(--ui); font-weight:600; font-size:1.02rem;
+    border-radius:12px; padding:15px 22px; min-height:54px; display:inline-flex; align-items:center; gap:9px; border:1px solid transparent;
+    transition:transform .12s ease, background .2s ease, box-shadow .2s ease;}
+  .btn:active{transform:translateY(1px);}
+  .btn-go{background:var(--indigo-700); color:#fff;}
+  .btn-go:hover{background:var(--indigo-900);}
+  .btn-go svg{width:17px; height:17px;}
+  .btn-done{background:transparent; color:var(--indigo-700); border-color:var(--line); font-weight:600;}
+  .btn-done:hover{border-color:var(--indigo-500); color:var(--indigo-900);}
+  .btn-done svg{width:20px; height:20px;}
+
+  .step.done .node{background:var(--indigo-700); border-color:var(--indigo-700); color:#fff; transform:scale(1.02);}
+  .step.done .card{border-color:var(--indigo-300);}
+  .step.done .card h2{color:var(--indigo-700);}
+  .step.done .btn-done{background:var(--ok); color:#fff; border-color:var(--ok);}
+  .step.done .btn-done:hover{background:var(--ok-700);}
+  .step.current .card{border-color:var(--indigo-500); box-shadow:0 0 0 3px rgba(106,95,198,.18), var(--shadow);}
+  .step.current .node{border-color:var(--indigo-500); color:var(--indigo-700);}
+
+  .finish{margin-top:8px; padding:34px 30px 34px 64px; border-radius:22px; text-align:center;
+    background:linear-gradient(160deg,var(--indigo-900),var(--indigo-700)); color:#EEEBFA; box-shadow:var(--shadow);
+    opacity:.55; transition:opacity .5s ease; position:relative;}
+  @media (max-width:560px){ .finish{padding-left:52px;} }
+  .finish.ready{opacity:1;}
+  .finish .node{top:34px;}
+  .finish.ready .node{background:#fff; border-color:#fff; color:var(--indigo-700);}
+  .finish h2{font-family:var(--display); font-weight:800; font-size:1.7rem; margin:0 0 8px; color:#fff;}
+  .finish p{margin:0 auto; max-width:42ch; color:#D7D1F2;}
+  .finish .btn-go{background:#fff; color:var(--indigo-700);}
+  .finish .btn-go:hover{background:var(--pill); color:var(--indigo-900);}
+  .finish.locked .btn-go{pointer-events:none; opacity:.5;}
+
+  .reset{display:block; margin:30px auto 0; background:none; border:0; color:var(--muted); font-family:var(--ui); font-size:.92rem; cursor:pointer; text-decoration:underline; text-underline-offset:3px;}
+  .reset:hover{color:var(--indigo-700);}
+  footer{margin-top:46px; padding-top:24px; border-top:1px solid var(--line); font-size:.8rem; line-height:1.65; color:#8a8aa0;}
+  footer strong{color:#73738c; font-weight:600;}
+
+  a:focus-visible,button:focus-visible{outline:3px solid var(--indigo-500); outline-offset:3px; border-radius:8px;}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important;} }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="wordmark">VINCERE</p>
+  <span class="eyebrow">Cash Account Setup · v1.0</span>
+  <h1>Every step,<br><span class="light">written out.</span></h1>
+  <p class="lede">The same five steps, spelled out one instruction at a time. Take them in order, check each one off, and watch the matching video any time you'd like a hand.</p>
+  <p class="switch"><a href="index.html">← Prefer to watch? Go to the video version</a></p>
+
+  <div class="meter" role="status" aria-live="polite">
+    <div class="meter-count"><b id="doneCount">0</b> of 5 done</div>
+    <div class="meter-bar"><div class="meter-fill" id="meterFill"></div></div>
+    <p class="meter-note" id="meterNote">Start whenever you're ready. Step one is just joining the Discord.</p>
+  </div>
+
+  <ol class="steps" id="steps"></ol>
+
+  <section class="finish locked" id="finish" aria-live="polite">
+    <div class="node" aria-hidden="true">★</div>
+    <h2 id="finishTitle"></h2>
+    <p id="finishBody"></p>
+  </section>
+
+  <button class="reset" id="reset">Start over (clear my progress)</button>
+
+  <footer>
+    <p><strong>Risk disclosure.</strong> Vincere Trading LLC licenses automated trading software; it is not a broker-dealer, investment adviser, or futures commission merchant, and does not provide individualized investment, tax, or legal advice. Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not indicative of future results. The client makes all trading decisions. This page is for setup and informational purposes only.</p>
+  </footer>
+</main>
+
+<script>
+  const KEY = "vincere_cash_setup_v1"; // shared with the video page so progress stays in sync
+
+  const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>';
+  const ICON_EXT  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+  const ICON_CHECK= '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+  const ICON_CIRC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg>';
+
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  let state = loadState();
+  function loadState(){
+    try{ const s = JSON.parse(localStorage.getItem(KEY)); if(Array.isArray(s) && s.length===STEPS.length) return s; }catch(e){}
+    return STEPS.map(()=>false);
+  }
+  function saveState(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+
+  const stepsEl = document.getElementById("steps");
+  STEPS.forEach((s,i)=>{
+    const li = document.createElement("li");
+    li.className = "step"; li.id = "step-"+i;
+    const items = s.list.map(t=>"<li>"+esc(t)+"</li>").join("");
+    const noteHtml = s.note ? '<div class="note">'+esc(s.note)+'</div>' : "";
+    const watchHtml = s.video
+      ? '<a class="watch" href="'+s.video+'" target="_blank" rel="noopener">'+ICON_PLAY+' Watch the walkthrough</a>'
+      : '<span class="watch none">'+ICON_PLAY+' Walkthrough video coming soon</span>';
+    li.innerHTML =
+      '<div class="node" aria-hidden="true"><span class="node-num">'+(i+1)+'</span></div>'+
+      '<div class="card">'+
+        '<h2>'+esc(s.title)+'</h2>'+
+        '<p class="time">'+esc(s.time)+'</p>'+
+        '<p class="why">'+esc(s.why)+'</p>'+
+        '<ol class="todo">'+items+'</ol>'+
+        noteHtml+
+        '<div>'+watchHtml+'</div>'+
+        '<div class="actions">'+
+          '<a class="btn btn-go" href="'+s.ctaUrl+'" target="_blank" rel="noopener">'+esc(s.ctaLabel)+' '+ICON_EXT+'</a>'+
+          '<button class="btn btn-done" type="button" data-i="'+i+'"></button>'+
+        '</div>'+
+      '</div>';
+    stepsEl.appendChild(li);
+  });
+
+  function render(){
+    const doneN = state.filter(Boolean).length;
+    document.getElementById("doneCount").textContent = doneN;
+    document.getElementById("meterFill").style.width = (doneN/STEPS.length*100)+"%";
+
+    let spine = 0;
+    if(doneN>0){
+      const lastDone = state.lastIndexOf(true);
+      const a = document.querySelector("#step-0 .node").getBoundingClientRect();
+      const b = document.querySelector("#step-"+lastDone+" .node").getBoundingClientRect();
+      spine = (b.top - a.top) + b.height/2 + (a.height/2 - 1.5);
+    }
+    document.querySelector(".steps").style.setProperty("--spine", spine+"px");
+
+    const nextIdx = state.indexOf(false);
+    STEPS.forEach((s,i)=>{
+      const li = document.getElementById("step-"+i);
+      const done = state[i];
+      li.classList.toggle("done", done);
+      li.classList.toggle("current", !done && i===nextIdx);
+      li.querySelector(".node").innerHTML = done ? ICON_CHECK : '<span class="node-num">'+(i+1)+'</span>';
+      const btn = li.querySelector(".btn-done");
+      btn.innerHTML = done ? (ICON_CHECK+" Done") : (ICON_CIRC+" Mark as done");
+      btn.setAttribute("aria-pressed", done ? "true":"false");
+    });
+
+    const note = document.getElementById("meterNote");
+    if(doneN===0) note.textContent = "Start whenever you're ready. Step one is just joining the Discord.";
+    else if(doneN<STEPS.length) note.textContent = "Nicely done. "+(STEPS.length-doneN)+" to go. Pick them up whenever suits you.";
+    else note.textContent = "All five complete. You're ready for your onboarding call.";
+
+    const finish = document.getElementById("finish");
+    const ready = doneN===STEPS.length;
+    finish.classList.toggle("ready", ready);
+    finish.classList.toggle("locked", !ready);
+  }
+
+  document.getElementById("finishTitle").textContent = FINISH.title;
+  document.getElementById("finishBody").textContent = FINISH.body;
+
+  stepsEl.addEventListener("click", (e)=>{
+    const b = e.target.closest(".btn-done"); if(!b) return;
+    const i = +b.dataset.i; state[i] = !state[i]; saveState(); render();
+  });
+  document.getElementById("reset").addEventListener("click", ()=>{
+    state = STEPS.map(()=>false); saveState(); render(); window.scrollTo({top:0, behavior:"smooth"});
+  });
+  window.addEventListener("resize", render);
+  render();
+</script>
+</body>
+</html>
